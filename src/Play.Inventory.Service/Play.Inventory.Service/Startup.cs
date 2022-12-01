@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Play.Common.MassTransit;
 using Play.Common.MongoDB;
 using Play.Inventory.Service.Clients;
 using Play.Inventory.Service.Entities;
@@ -34,23 +35,25 @@ namespace Play.Inventory.Service
         {
             services
                 .AddMongo()
-                .AddMongoRepository<InventoryItem>("inventoryitems");
+                .AddMongoRepository<InventoryItem>("inventoryitems")
+                .AddMongoRepository<CatalogItem>("catalogitems")
+                .AddMassTransitWithRabbitMq();
 
-            services.AddHttpClient<CatalogClient>(client =>
-            {
-                client.BaseAddress = new Uri("https://localhost:5001");
-            })  
-                //this Or thing that is specified here, is due to the fact that we also want this policy to handle the specified exception, thus combining the defined timeout policy with, in this case, the retry one
-                .AddTransientHttpErrorPolicy(policy => policy.Or<TimeoutRejectedException>().WaitAndRetryAsync(
-                    5,
-                    retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)) + TimeSpan.FromMilliseconds((new Random()).Next(0,1000))
-                ))
-                .AddTransientHttpErrorPolicy(policy => policy.Or<TimeoutRejectedException>().CircuitBreakerAsync(
-                        3,
-                        TimeSpan.FromSeconds(15)
-                    ))
-                // this will add the timeout of one second
-                .AddPolicyHandler(Policy.TimeoutAsync<HttpResponseMessage>(1));
+            //services.AddHttpClient<CatalogClient>(client =>
+            //{
+            //    client.BaseAddress = new Uri("https://localhost:5001");
+            //})  
+            //    //this Or thing that is specified here, is due to the fact that we also want this policy to handle the specified exception, thus combining the defined timeout policy with, in this case, the retry one
+            //    .AddTransientHttpErrorPolicy(policy => policy.Or<TimeoutRejectedException>().WaitAndRetryAsync(
+            //        5,
+            //        retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)) + TimeSpan.FromMilliseconds((new Random()).Next(0,1000))
+            //    ))
+            //    .AddTransientHttpErrorPolicy(policy => policy.Or<TimeoutRejectedException>().CircuitBreakerAsync(
+            //            3,
+            //            TimeSpan.FromSeconds(15)
+            //        ))
+            //    // this will add the timeout of one second
+            //    .AddPolicyHandler(Policy.TimeoutAsync<HttpResponseMessage>(1));
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
