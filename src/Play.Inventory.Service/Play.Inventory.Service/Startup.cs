@@ -70,6 +70,17 @@ namespace Play.Inventory.Service
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Play.Inventory.Service v1"));
+                
+                app.UseCors(builder =>
+                {
+                    /*
+                        By doing this, we are allowing any header from the server and any method (GET, POST, PUT, etc..)
+                     */
+                    builder
+                        .WithOrigins(Configuration["AllowedOrigin"])
+                        .AllowAnyHeader()
+                        .AllowAnyMethod();
+                });
             }
 
             app.UseHttpsRedirection();
