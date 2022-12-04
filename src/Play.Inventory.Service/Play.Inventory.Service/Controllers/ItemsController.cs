@@ -8,14 +8,15 @@ using Play.Inventory.Service.Entities;
 using Play.Inventory.Service.Extensions;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace Play.Inventory.Service.Controllers
 {
     [Route("items")]
     [ApiController]
-    [Authorize]
     public class ItemsController : ControllerBase
     {
         private readonly IRepository<InventoryItem> inventoryItemsRepository;
@@ -28,12 +29,21 @@ namespace Play.Inventory.Service.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<InventoryItemDto>>> GetAsync(Guid userId)
         {
             if(userId == Guid.Empty)
             {
                 return BadRequest();
             }
+
+            var currentUserId = User.FindFirstValue(JwtRegisteredClaimNames.Sub);
+
+            /*
+                Here we are forbidding the situation that the user tries to access by not having the same userID as the user he is trying to get info about and is not admin
+                (admin user, although have not the same id as the user, should be able to retrieve the information)
+             */
+            if (Guid.Parse(currentUserId) != userId && !User.IsInRole("Admin")) return Forbid();
 
             var items = (await inventoryItemsRepository
                                 .GetAllAsync(item => item.UserId == userId));
@@ -52,6 +62,7 @@ namespace Play.Inventory.Service.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public async Task<ActionResult> PostAsync(GrantItemsDto grantItemsDto)
         {
             /*
