@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "nhbOaxxcRA/HMiJWawwE+nwUea2lYd35EA1RvKGwybI1gJHvJagwK0wdeQOZDOLCprrbcI/I4fHe+s1ei9BOFQ==",
+  "dgSpecHash": "8kspVHaMhgPVTRgNOb5IG/WpCDyASAdFyId4+2mxx7exaRMCLWFeA/e4O4O9PQ1vyBWxctllX0XF5FZg6wixSw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Rafael\\Documents\\Projects\\DotnetMicroservices\\Play.Inventory\\src\\Play.Inventory.Service\\Play.Inventory.Service\\Play.Inventory.Service.csproj",
   "expectedPackageFiles": [
@@ -46,7 +46,7 @@
     "C:\\Users\\Rafael\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512",
     "C:\\Users\\Rafael\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "C:\\Users\\Rafael\\.nuget\\packages\\play.catalog.contracts\\1.0.0\\play.catalog.contracts.1.0.0.nupkg.sha512",
-    "C:\\Users\\Rafael\\.nuget\\packages\\play.common\\1.0.4\\play.common.1.0.4.nupkg.sha512",
+    "C:\\Users\\Rafael\\.nuget\\packages\\play.common\\1.0.5\\play.common.1.0.5.nupkg.sha512",
     "C:\\Users\\Rafael\\.nuget\\packages\\polly\\7.2.2\\polly.7.2.2.nupkg.sha512",
     "C:\\Users\\Rafael\\.nuget\\packages\\polly.extensions.http\\3.0.0\\polly.extensions.http.3.0.0.nupkg.sha512",
     "C:\\Users\\Rafael\\.nuget\\packages\\rabbitmq.client\\6.2.2\\rabbitmq.client.6.2.2.nupkg.sha512",
