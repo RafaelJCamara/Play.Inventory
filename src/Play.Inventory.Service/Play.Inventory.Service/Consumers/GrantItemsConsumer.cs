@@ -43,11 +43,23 @@ namespace Play.Inventory.Service.Consumers
                     Quantity = message.Quantity,
                     AcquiredDate = DateTimeOffset.Now
                 };
+
+                inventoryItem.MessageIds.Add(context.MessageId.Value);
+
                 await inventoryItemsRepository.CreateAsync(inventoryItem);
             }
             else
             {
+
+                if (inventoryItem.MessageIds.Contains(context.MessageId.Value))
+                {
+                    //this message as already been seen by this consumer, so we don't need to do a thing
+                    await context.Publish(new InventoryItemsGranted(message.CorrelationId));
+                    return;
+                }
+
                 inventoryItem.Quantity += message.Quantity;
+                inventoryItem.MessageIds.Add(context.MessageId.Value);
                 await inventoryItemsRepository.UpdateAsync(inventoryItem);
             }
 
