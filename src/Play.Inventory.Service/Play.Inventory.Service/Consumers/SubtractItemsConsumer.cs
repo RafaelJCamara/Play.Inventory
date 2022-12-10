@@ -44,6 +44,7 @@ namespace Play.Inventory.Service.Consumers
                 inventoryItem.Quantity -= message.Quantity;
                 inventoryItem.MessageIds.Add(context.MessageId.Value);
                 await inventoryItemsRepository.UpdateAsync(inventoryItem);
+                await context.Publish(new InventoryItemUpdated(inventoryItem.UserId, inventoryItem.CatalogItemId, inventoryItem.Quantity));
             }
 
             await context.Publish(new InventoryItemsSubtracted(message.CorrelationId));
