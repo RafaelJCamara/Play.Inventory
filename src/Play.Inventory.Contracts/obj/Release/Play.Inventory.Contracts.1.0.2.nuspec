@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Play.Inventory.Contracts</id>
+    <version>1.0.2</version>
+    <authors>Play.Inventory.Contracts</authors>
+    <description>Package Description</description>
+    <repository url="https://github.com/RafaelJCamara/Play.Inventory" />
+    <dependencies>
+      <group targetFramework="net5.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Rafael\Documents\Projects\DotnetMicroservices\Play.Inventory\src\Play.Inventory.Contracts\bin\Release\net5.0\Play.Inventory.Contracts.dll" target="lib\net5.0\Play.Inventory.Contracts.dll" />
+  </files>
+</package>

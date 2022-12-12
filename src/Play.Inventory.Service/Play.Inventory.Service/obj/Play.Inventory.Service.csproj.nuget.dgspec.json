@@ -22,8 +22,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\Rafael\\Documents\\Projects\\DotnetMicroservices\\packages": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/RafaelJCamara/index.json": {}
         },
         "frameworks": {
           "net5.0": {
@@ -77,8 +77,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\Rafael\\Documents\\Projects\\DotnetMicroservices\\packages": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/RafaelJCamara/index.json": {}
         },
         "frameworks": {
           "net5.0": {
