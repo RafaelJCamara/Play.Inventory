@@ -558,7 +558,7 @@
           "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {}
         }
       },
-      "Play.Catalog.Contracts/1.0.0": {
+      "Play.Catalog.Contracts/1.0.3": {
         "type": "package",
         "compile": {
           "lib/net5.0/Play.Catalog.Contracts.dll": {}
@@ -567,7 +567,7 @@
           "lib/net5.0/Play.Catalog.Contracts.dll": {}
         }
       },
-      "Play.Common/1.0.5": {
+      "Play.Common/1.0.6": {
         "type": "package",
         "dependencies": {
           "MassTransit.AspNetCore": "7.3.1",
@@ -1760,25 +1760,25 @@
         "newtonsoft.json.bson.nuspec"
       ]
     },
-    "Play.Catalog.Contracts/1.0.0": {
-      "sha512": "i6NecZ93lxMHOXSwamUymlaeFgWQR6taiyP/ue53bGA2YkEBIul8wZqJKwOoAgAr5LLg/g/V6j0aaO/AHGtwAA==",
+    "Play.Catalog.Contracts/1.0.3": {
+      "sha512": "lTn45XnSIXaWwKMaMqfjpFfTQ5v0ikiCi1hliQGkL7UTbgrQSV+V9/t34YOyHnkErD89oyvLLaTIFRWQqbYwww==",
       "type": "package",
-      "path": "play.catalog.contracts/1.0.0",
+      "path": "play.catalog.contracts/1.0.3",
       "files": [
         ".nupkg.metadata",
         "lib/net5.0/Play.Catalog.Contracts.dll",
-        "play.catalog.contracts.1.0.0.nupkg.sha512",
+        "play.catalog.contracts.1.0.3.nupkg.sha512",
         "play.catalog.contracts.nuspec"
       ]
     },
-    "Play.Common/1.0.5": {
-      "sha512": "knmurcon+j3TRvcapwYC9ZcvV2vnLsRHm9HySL+Lersx93v+1rHSWXthbsKlGGoJKQbQlOAixgV0MeWd/4HQQA==",
+    "Play.Common/1.0.6": {
+      "sha512": "ooSB5Ozpx53i3ui7WGthDZ5WfFudNVDj+fuHaGZutJ0NUbWaGperp7gzBj95P0SkxzKVG7yIoVksKjVlJ66sGQ==",
       "type": "package",
-      "path": "play.common/1.0.5",
+      "path": "play.common/1.0.6",
       "files": [
         ".nupkg.metadata",
         "lib/net5.0/Play.Common.dll",
-        "play.common.1.0.5.nupkg.sha512",
+        "play.common.1.0.6.nupkg.sha512",
         "play.common.nuspec"
       ]
     },
@@ -2452,8 +2452,8 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "Microsoft.Extensions.Http.Polly >= 6.0.0",
-      "Play.Catalog.Contracts >= 1.0.0",
-      "Play.Common >= 1.0.5",
+      "Play.Catalog.Contracts >= 1.0.3",
+      "Play.Common >= 1.0.6",
       "Play.Inventory.Contracts >= 1.0.0",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
@@ -2508,11 +2508,11 @@
           },
           "Play.Catalog.Contracts": {
             "target": "Package",
-            "version": "[1.0.0, )"
+            "version": "[1.0.3, )"
           },
           "Play.Common": {
             "target": "Package",
-            "version": "[1.0.5, )"
+            "version": "[1.0.6, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",

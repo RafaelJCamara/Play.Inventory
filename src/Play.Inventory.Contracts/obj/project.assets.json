@@ -11,7 +11,7 @@
     "C:\\Users\\Rafael\\.nuget\\packages\\": {}
   },
   "project": {
-    "version": "1.0.3",
+    "version": "1.0.0",
     "restore": {
       "projectUniqueName": "C:\\Users\\Rafael\\Documents\\Projects\\DotnetMicroservices\\Play.Inventory\\src\\Play.Inventory.Contracts\\Play.Inventory.Contracts.csproj",
       "projectName": "Play.Inventory.Contracts",
@@ -52,8 +52,7 @@
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -62,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }
