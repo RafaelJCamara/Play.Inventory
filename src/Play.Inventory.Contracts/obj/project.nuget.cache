@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bUa84Q5Xcg+l3ArLpRKuBzD8O5htWaN1MbUw2CHjRu4U5AvcklQDq/kk8vCE8ykCKa+5kqj/Zzytywd8M+48Tw==",
+  "dgSpecHash": "zT96zAX12X4t/Stu8Pi1X/j2FTA8/WHD7URP8zgDn/ruqvbr3KefTZoPd8pU3eLgzJ+QbZwWueWWbHjP+vA6LA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Rafael\\Documents\\Projects\\DotnetMicroservices\\Play.Inventory\\src\\Play.Inventory.Contracts\\Play.Inventory.Contracts.csproj",
+  "projectFilePath": "/Users/rafaelcamara/Documents/Projects/DotnetMicroservices/Play.Inventory/src/Play.Inventory.Contracts/Play.Inventory.Contracts.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

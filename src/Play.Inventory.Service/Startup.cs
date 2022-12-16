@@ -1,3 +1,8 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net.Http;
+using System.Threading.Tasks;
 using GreenPipes;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -16,11 +21,6 @@ using Play.Inventory.Service.Entities;
 using Play.Inventory.Service.Exceptions;
 using Polly;
 using Polly.Timeout;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Threading.Tasks;
 
 namespace Play.Inventory.Service
 {
@@ -40,7 +40,7 @@ namespace Play.Inventory.Service
                 .AddMongo()
                 .AddMongoRepository<InventoryItem>("inventoryitems")
                 .AddMongoRepository<CatalogItem>("catalogitems")
-                .AddMassTransitWithRabbitMq(retryConfigurator =>
+                .AddMassTransitWithessageBroker(Configuration, retryConfigurator =>
                 {
                     retryConfigurator.Interval(3, TimeSpan.FromSeconds(5));
                     //This is here because we want to ignore the retry when this exception occurs, because its behaviour won't change
@@ -54,7 +54,7 @@ namespace Play.Inventory.Service
             //{
             //    client.BaseAddress = new Uri("https://localhost:5001");
             //})  
-            //    //this Or thing that is specified here, is due to the fact that we also want this policy to handle the specified exception, thus combining the defined timeout policy with, in this case, the retry one
+            // this Or thing that is specified here, is due to the fact that we also want this policy to handle the specified exception, thus combining the defined timeout policy with, in this case, the retry one
             //    .AddTransientHttpErrorPolicy(policy => policy.Or<TimeoutRejectedException>().WaitAndRetryAsync(
             //        5,
             //        retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)) + TimeSpan.FromMilliseconds((new Random()).Next(0,1000))
@@ -63,7 +63,7 @@ namespace Play.Inventory.Service
             //            3,
             //            TimeSpan.FromSeconds(15)
             //        ))
-            //    // this will add the timeout of one second
+            // this will add the timeout of one second
             //    .AddPolicyHandler(Policy.TimeoutAsync<HttpResponseMessage>(1));
 
             services.AddControllers();
@@ -81,7 +81,7 @@ namespace Play.Inventory.Service
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Play.Inventory.Service v1"));
-                
+
                 app.UseCors(builder =>
                 {
                     /*

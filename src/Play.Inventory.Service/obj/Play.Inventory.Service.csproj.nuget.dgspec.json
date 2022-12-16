@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rafael\\Documents\\Projects\\DotnetMicroservices\\Play.Inventory\\src\\Play.Inventory.Service\\Play.Inventory.Service\\Play.Inventory.Service.csproj": {}
+    "/Users/rafaelcamara/Documents/Projects/DotnetMicroservices/Play.Inventory/src/Play.Inventory.Service/Play.Inventory.Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rafael\\Documents\\Projects\\DotnetMicroservices\\Play.Inventory\\src\\Play.Inventory.Contracts\\Play.Inventory.Contracts.csproj": {
+    "/Users/rafaelcamara/Documents/Projects/DotnetMicroservices/Play.Inventory/src/Play.Inventory.Contracts/Play.Inventory.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rafael\\Documents\\Projects\\DotnetMicroservices\\Play.Inventory\\src\\Play.Inventory.Contracts\\Play.Inventory.Contracts.csproj",
+        "projectUniqueName": "/Users/rafaelcamara/Documents/Projects/DotnetMicroservices/Play.Inventory/src/Play.Inventory.Contracts/Play.Inventory.Contracts.csproj",
         "projectName": "Play.Inventory.Contracts",
-        "projectPath": "C:\\Users\\Rafael\\Documents\\Projects\\DotnetMicroservices\\Play.Inventory\\src\\Play.Inventory.Contracts\\Play.Inventory.Contracts.csproj",
-        "packagesPath": "C:\\Users\\Rafael\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rafael\\Documents\\Projects\\DotnetMicroservices\\Play.Inventory\\src\\Play.Inventory.Contracts\\obj\\",
+        "projectPath": "/Users/rafaelcamara/Documents/Projects/DotnetMicroservices/Play.Inventory/src/Play.Inventory.Contracts/Play.Inventory.Contracts.csproj",
+        "packagesPath": "/Users/rafaelcamara/.nuget/packages/",
+        "outputPath": "/Users/rafaelcamara/Documents/Projects/DotnetMicroservices/Play.Inventory/src/Play.Inventory.Contracts/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Rafael\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/rafaelcamara/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.pkg.github.com/RafaelJCamara/index.json": {}
         },
@@ -55,28 +53,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.408/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Rafael\\Documents\\Projects\\DotnetMicroservices\\Play.Inventory\\src\\Play.Inventory.Service\\Play.Inventory.Service\\Play.Inventory.Service.csproj": {
+    "/Users/rafaelcamara/Documents/Projects/DotnetMicroservices/Play.Inventory/src/Play.Inventory.Service/Play.Inventory.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rafael\\Documents\\Projects\\DotnetMicroservices\\Play.Inventory\\src\\Play.Inventory.Service\\Play.Inventory.Service\\Play.Inventory.Service.csproj",
+        "projectUniqueName": "/Users/rafaelcamara/Documents/Projects/DotnetMicroservices/Play.Inventory/src/Play.Inventory.Service/Play.Inventory.Service.csproj",
         "projectName": "Play.Inventory.Service",
-        "projectPath": "C:\\Users\\Rafael\\Documents\\Projects\\DotnetMicroservices\\Play.Inventory\\src\\Play.Inventory.Service\\Play.Inventory.Service\\Play.Inventory.Service.csproj",
-        "packagesPath": "C:\\Users\\Rafael\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rafael\\Documents\\Projects\\DotnetMicroservices\\Play.Inventory\\src\\Play.Inventory.Service\\Play.Inventory.Service\\obj\\",
+        "projectPath": "/Users/rafaelcamara/Documents/Projects/DotnetMicroservices/Play.Inventory/src/Play.Inventory.Service/Play.Inventory.Service.csproj",
+        "packagesPath": "/Users/rafaelcamara/.nuget/packages/",
+        "outputPath": "/Users/rafaelcamara/Documents/Projects/DotnetMicroservices/Play.Inventory/src/Play.Inventory.Service/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Rafael\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/rafaelcamara/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.pkg.github.com/RafaelJCamara/index.json": {}
         },
@@ -84,8 +80,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Rafael\\Documents\\Projects\\DotnetMicroservices\\Play.Inventory\\src\\Play.Inventory.Contracts\\Play.Inventory.Contracts.csproj": {
-                "projectPath": "C:\\Users\\Rafael\\Documents\\Projects\\DotnetMicroservices\\Play.Inventory\\src\\Play.Inventory.Contracts\\Play.Inventory.Contracts.csproj"
+              "/Users/rafaelcamara/Documents/Projects/DotnetMicroservices/Play.Inventory/src/Play.Inventory.Contracts/Play.Inventory.Contracts.csproj": {
+                "projectPath": "/Users/rafaelcamara/Documents/Projects/DotnetMicroservices/Play.Inventory/src/Play.Inventory.Contracts/Play.Inventory.Contracts.csproj"
               }
             }
           }
@@ -110,7 +106,7 @@
             },
             "Play.Common": {
               "target": "Package",
-              "version": "[1.0.6, )"
+              "version": "[1.0.8, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -135,7 +131,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.408/RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -8,26 +8,24 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Rafael\\.nuget\\packages\\": {}
+    "/Users/rafaelcamara/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rafael\\Documents\\Projects\\DotnetMicroservices\\Play.Inventory\\src\\Play.Inventory.Contracts\\Play.Inventory.Contracts.csproj",
+      "projectUniqueName": "/Users/rafaelcamara/Documents/Projects/DotnetMicroservices/Play.Inventory/src/Play.Inventory.Contracts/Play.Inventory.Contracts.csproj",
       "projectName": "Play.Inventory.Contracts",
-      "projectPath": "C:\\Users\\Rafael\\Documents\\Projects\\DotnetMicroservices\\Play.Inventory\\src\\Play.Inventory.Contracts\\Play.Inventory.Contracts.csproj",
-      "packagesPath": "C:\\Users\\Rafael\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rafael\\Documents\\Projects\\DotnetMicroservices\\Play.Inventory\\src\\Play.Inventory.Contracts\\obj\\",
+      "projectPath": "/Users/rafaelcamara/Documents/Projects/DotnetMicroservices/Play.Inventory/src/Play.Inventory.Contracts/Play.Inventory.Contracts.csproj",
+      "packagesPath": "/Users/rafaelcamara/.nuget/packages/",
+      "outputPath": "/Users/rafaelcamara/Documents/Projects/DotnetMicroservices/Play.Inventory/src/Play.Inventory.Contracts/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Rafael\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/rafaelcamara/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {},
         "https://nuget.pkg.github.com/RafaelJCamara/index.json": {}
       },
@@ -61,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.408/RuntimeIdentifierGraph.json"
       }
     }
   }
