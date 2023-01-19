@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zT96zAX12X4t/Stu8Pi1X/j2FTA8/WHD7URP8zgDn/ruqvbr3KefTZoPd8pU3eLgzJ+QbZwWueWWbHjP+vA6LA==",
+  "dgSpecHash": "8VogtpL2wV9Aq/yXsZNsKKE4+oVHqYYDuPTdWq4WlSHDFVG/w6VwqDQ8xc80OmC/5KS784cwi51cS0AIMFmBjg==",
   "success": true,
   "projectFilePath": "/Users/rafaelcamara/Documents/Projects/DotnetMicroservices/Play.Inventory/src/Play.Inventory.Contracts/Play.Inventory.Contracts.csproj",
   "expectedPackageFiles": [],
